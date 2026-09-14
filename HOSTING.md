@@ -1,7 +1,10 @@
 # SwipeKill hosting status
 
-Blocked until VPS SSH or DO login; Stripe success redirect must be `https://DOMAIN/success.html`.
+**Live:** https://jayjasmine.github.io/swipekill/ (GitHub Pages, `main` root)
 
-- Do not resume Meta ads until `YOUR_PUBLIC_URL` is a durable HTTPS host (see ADS.md).
+- Stripe success redirect (Jay-only): set Payment Link after-completion to
+  `https://jayjasmine.github.io/swipekill/success.html`
+- Do not resume Meta ads until that Stripe redirect is set (see ADS.md).
 - Local QA: `python3 serve.py` on :8765. Pack: `bash deploy/pack.sh` → `dist/swipekill-static.tgz`.
-- Full steps: DEPLOY-VPS.md.
+- Repo: https://github.com/jayjasmine/swipekill
+- Full alternate steps: DEPLOY-VPS.md (not used for this host).

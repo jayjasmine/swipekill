@@ -1,8 +1,8 @@
 # SwipeKill Meta smoke test
 
-**ADS PAUSED** until a durable public URL exists (VPS/domain). Do not use tunnels or localhost as the live destination.
+**ADS PAUSED** until Stripe success redirect points at the live host. Durable public URL is live.
 
-Destination: YOUR_PUBLIC_URL  (e.g. https://DOMAIN/ — replace when host is live)
+Destination: https://jayjasmine.github.io/swipekill/
 Stripe: https://buy.stripe.com/fZucN51uneIGckX2Y1gIo00
 Goal: first $19 sales. $125/week = 7 sales.
 
@@ -14,17 +14,17 @@ Goal: first $19 sales. $125/week = 7 sales.
 - Gender: men
 - Interests: Tinder, Hinge, Bumble, dating
 - Placement: IG feed + FB feed first. No Audience Network.
-- Status: paused — resume only after YOUR_PUBLIC_URL is HTTPS and Stripe success redirect is https://DOMAIN/success.html
+- Status: paused — resume only after Stripe success redirect is https://jayjasmine.github.io/swipekill/success.html
 
 ## Creative A (primary)
 Primary text: Your first photo is why she never sees the rest.
 Headline: Which of your 6 photos is killing your matches?
 Description: $19. 60 seconds. Hard paywall.
 CTA: Learn more
-URL: YOUR_PUBLIC_URL
+URL: https://jayjasmine.github.io/swipekill/
 
 ## Creative B
 Primary text: Friends lie. Strangers don’t. The photo you like is usually the one killing the stack.
 Headline: Get the kill list — $19
 CTA: Learn more
-URL: YOUR_PUBLIC_URL
+URL: https://jayjasmine.github.io/swipekill/
