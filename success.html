@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Unlocked — SwipeKill</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/styles.css?v=20260821e" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">SK</span> SwipeKill <em>Photo Autopsy</em></a>
+    <div class="header-meta">$19 · one time</div>
+  </header>
+  <main class="hero">
+    <div class="wrap">
+      <div class="kicker">Receipt path</div>
+      <h1>Unlocking the report.</h1>
+      <p class="lede">If you came from Stripe, this page marks the autopsy paid on this device and sends you to the report. It does not charge you again.</p>
+      <p class="btn-note">If nothing happens, open report.html. This page is the paid unlock. Query-string unlock is off in production.</p>
+    </div>
+  </main>
+  <script src="js/config.js?v=20260821e"></script>
+  <script src="js/store.js?v=20260821e"></script>
+  <script>
+    SK.store.unlock("stripe-success");
+    location.replace("report.html");
+  </script>
+</body>
+</html>

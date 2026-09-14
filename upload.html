@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Upload — SwipeKill Photo Autopsy</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/styles.css?v=20260821e" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">SK</span> SwipeKill <em>Photo Autopsy</em></a>
+    <div class="header-meta">$19 · one time</div>
+  </header>
+  <main id="main" class="hero">
+    <div class="wrap">
+      <div class="kicker">Step 1 of 2</div>
+      <h1>Drop the stack.</h1>
+      <p class="lede">4 to 6 photos. Mark which one is currently first. We score on this phone. You see nothing until you pay.</p>
+      <p class="warn-nudes">No nudes. Dating photos only. Shirt on. If we wouldn’t let it on Hinge, don’t upload it.</p>
+
+      <label class="drop" id="drop">
+        <strong>Tap to add photos</strong>
+        <span class="tiny muted">JPG or PNG · up to 6</span>
+        <input id="files" type="file" accept="image/*" multiple hidden />
+      </label>
+      <div class="thumbs" id="thumbs"></div>
+      <p class="btn-note" id="count">0 / 6</p>
+
+      <div class="gates">
+        <label class="gate">
+          <input type="checkbox" id="age" />
+          <span>I am 21 or older. This is not for kids.</span>
+        </label>
+        <label class="gate">
+          <input type="checkbox" id="nudes" />
+          <span>These are dating-app photos. No nudes, no underwear shots, no illegal content.</span>
+        </label>
+      </div>
+
+      <button class="btn btn-block" id="go" type="button" disabled>See my kill list — $19</button>
+      <span class="btn-note" id="status">Add at least 4 photos, mark your current first, check both boxes.</span>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap-wide">
+      <p>SwipeKill Photo Autopsy is entertainment and dating-app advice for adults 21+. It is not a scientific, psychological, or medical rating. Scores are produced on your device from simple photo measurements (light, sharpness, crop, group vs solo). They are opinions, not facts about your worth.</p>
+      <p>No nudes. Dating photos only. $19 USD one-time when checkout is live. Friends lie. The first photo does not have to.</p>
+    </div>
+  </footer>
+  <script src="js/config.js?v=20260821e"></script>
+  <script src="js/store.js?v=20260821e"></script>
+  <script src="js/analyze.js?v=20260821e"></script>
+  <script src="js/upload.js?v=20260821e"></script>
+</body>
+</html>
