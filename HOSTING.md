@@ -1,10 +1,19 @@
 # SwipeKill hosting status
 
-**Live:** https://jayjasmine.github.io/swipekill/ (GitHub Pages, `main` root)
+**Live (GitHub Pages):** https://jayjasmine.github.io/swipekill/
 
-- Stripe success redirect (Jay-only): set Payment Link after-completion to
-  `https://jayjasmine.github.io/swipekill/success.html`
-- Do not resume Meta ads until that Stripe redirect is set (see ADS.md).
+Repo: https://github.com/jayjasmine/swipekill (public, `main` → Pages root).
+
+## Still blocked (Jay-only)
+
+Stripe Payment Link after-completion redirect must be:
+
+```
+https://jayjasmine.github.io/swipekill/success.html
+```
+
+Without that redirect, paid buyers do not unlock the report on-device.
+
+- Do not resume Meta ads until that Stripe redirect is confirmed.
 - Local QA: `python3 serve.py` on :8765. Pack: `bash deploy/pack.sh` → `dist/swipekill-static.tgz`.
-- Repo: https://github.com/jayjasmine/swipekill
-- Full alternate steps: DEPLOY-VPS.md (not used for this host).
+- VPS path (optional later): DEPLOY-VPS.md — still needs SSH/DO login; Pages is the durable host for now.

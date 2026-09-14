@@ -1,6 +1,6 @@
 # SwipeKill Meta smoke test
 
-**ADS PAUSED** until Stripe success redirect points at the live host. Durable public URL is live.
+**ADS PAUSED** until Stripe success redirect points at the live host.
 
 Destination: https://jayjasmine.github.io/swipekill/
 Stripe: https://buy.stripe.com/fZucN51uneIGckX2Y1gIo00
