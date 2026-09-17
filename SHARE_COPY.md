@@ -4,6 +4,7 @@ Do not auto-post as Jay. Use when a channel is already owned.
 
 Live: https://jayjasmine.github.io/swipekill/
 Price: $19 one-time · Photo Autopsy
+Share preview image: https://jayjasmine.github.io/swipekill/assets/og-share.png (1200×630)
 
 ## Short (X / Discord / group chat)
 Your first photo is why she never sees the rest.
