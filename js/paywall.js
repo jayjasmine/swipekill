@@ -5,6 +5,12 @@
   var pay = document.getElementById("pay");
   var fail = document.getElementById("fail");
 
+  if (fail) fail.classList.remove("is-on");
+  if (SK.store.hasPaymentLink()) {
+    if (pay) pay.textContent = "Pay $19 on Stripe — unlock the report";
+    if (fail) fail.classList.remove("is-on");
+  }
+
   SK.store.loadSession().then(function (session) {
     if (!session || !session.photos || session.photos.length < 4) {
       location.replace("upload.html");

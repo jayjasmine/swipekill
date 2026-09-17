@@ -21,6 +21,6 @@ Without that redirect, paid buyers do not unlock the report on-device.
 ## Discoverability (organic)
 
 - `robots.txt` + `sitemap.xml` on Pages root.
-- Open Graph / Product JSON-LD on `index.html`.
+- Open Graph / Product JSON-LD on `index.html`, plus `assets/og-share.png` (1200×630) for `og:image` / `twitter:image`.
 - Ready share copy: `SHARE_COPY.md` (do not auto-post as Jay).
 - Meta ads remain paused until Stripe success redirect is confirmed.

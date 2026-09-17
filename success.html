@@ -3,9 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
   <title>Unlocked — SwipeKill</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="css/styles.css?v=20260821e" />
+  <link rel="stylesheet" href="css/styles.css?v=20260917a" />
 </head>
 <body>
   <header class="site-header">
@@ -14,17 +15,47 @@
   </header>
   <main class="hero">
     <div class="wrap">
-      <div class="kicker">Receipt path</div>
-      <h1>Unlocking the report.</h1>
-      <p class="lede">If you came from Stripe, this page marks the autopsy paid on this device and sends you to the report. It does not charge you again.</p>
-      <p class="btn-note">If nothing happens, open report.html. This page is the paid unlock. Query-string unlock is off in production.</p>
+      <div class="kicker">Paid on this device</div>
+      <h1>Your report is unlocked.</h1>
+      <p class="lede" id="status">Payment landed. We marked this phone paid and are opening your autopsy. You will not be charged again.</p>
+      <a class="btn" href="report.html" id="open-report">Open the report</a>
+      <p class="btn-note">If you are not redirected, tap the button. This page is the paid unlock. Query-string unlock is off.</p>
     </div>
   </main>
-  <script src="js/config.js?v=20260821e"></script>
-  <script src="js/store.js?v=20260821e"></script>
+  <script src="js/config.js?v=20260917a"></script>
+  <script src="js/store.js?v=20260917a"></script>
   <script>
-    SK.store.unlock("stripe-success");
-    location.replace("report.html");
+    (function () {
+      "use strict";
+      var status = document.getElementById("status");
+
+      function unlockPaid() {
+        try {
+          if (window.SK && SK.store && typeof SK.store.unlock === "function") {
+            SK.store.unlock("stripe-success");
+            return true;
+          }
+        } catch (e) {}
+        try {
+          localStorage.setItem("sk_unlocked", "1");
+          localStorage.setItem("sk_unlock_source", "stripe-success");
+          return true;
+        } catch (e) {
+          return false;
+        }
+      }
+
+      var ok = unlockPaid();
+      if (status) {
+        status.textContent = ok
+          ? "This device is marked paid. Opening your autopsy now. You will not be charged again."
+          : "Could not save the unlock on this browser. Tap Open the report. If scores stay locked, return here after checkout.";
+      }
+
+      setTimeout(function () {
+        location.replace("report.html");
+      }, 700);
+    })();
   </script>
 </body>
 </html>
