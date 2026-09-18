@@ -12,7 +12,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="https://jayjasmine.github.io/swipekill/assets/og-share.png" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="css/styles.css?v=20260917a" />
+  <link rel="stylesheet" href="css/styles.css?v=20260918a" />
 </head>
 <body>
   <header class="site-header">
@@ -32,7 +32,12 @@
         <div class="price-amt">$19<span class="price-unit"> USD one-time</span></div>
         <p>No account. No subscription. Stripe receipt email after you pay.</p>
         <button class="btn btn-block" id="pay" type="button">Pay $19 — unlock the report</button>
+        <div class="after-pay" id="after-pay">
+          <p>Finish payment on Stripe. When it shows paid, tap Unlock my report.</p>
+          <a class="btn btn-block" id="unlock-report" href="success.html">Unlock my report</a>
+        </div>
         <p class="checkout-fail" id="fail">Checkout isn’t live. The payment link has not been set. This is not a successful payment.</p>
+        <a class="already-paid" id="already-paid" href="success.html">Already paid? Unlock my report</a>
         <span class="btn-note">Hard paywall. Friends don’t get a free peek either.</span>
       </div>
     </div>
@@ -43,8 +48,8 @@
       <p>No nudes. Dating photos only. $19 USD one-time. Friends lie. The first photo does not have to.</p>
     </div>
   </footer>
-  <script src="js/config.js?v=20260917a"></script>
-  <script src="js/store.js?v=20260917a"></script>
-  <script src="js/paywall.js?v=20260917a"></script>
+  <script src="js/config.js?v=20260918a"></script>
+  <script src="js/store.js?v=20260918a"></script>
+  <script src="js/paywall.js?v=20260918a"></script>
 </body>
 </html>
