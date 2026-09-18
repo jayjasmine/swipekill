@@ -4,15 +4,15 @@
 
 Repo: https://github.com/jayjasmine/swipekill (public, `main` → Pages root).
 
-## Still blocked (Jay-only)
+## Stripe redirect (ads still paused)
 
-Stripe Payment Link after-completion redirect must be:
+Organic buyers can unlock without the Stripe after-completion redirect: pay on Stripe, return to the paywall tab, tap Unlock my report → `success.html`.
+
+Meta ads still require after-completion redirect to:
 
 ```
 https://jayjasmine.github.io/swipekill/success.html
 ```
-
-Without that redirect, paid buyers do not unlock the report on-device.
 
 - Do not resume Meta ads until that Stripe redirect is confirmed.
 - Local QA: `python3 serve.py` on :8765. Pack: `bash deploy/pack.sh` → `dist/swipekill-static.tgz`.

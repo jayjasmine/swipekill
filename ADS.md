@@ -15,6 +15,7 @@ Goal: first $19 sales. $125/week = 7 sales.
 - Interests: Tinder, Hinge, Bumble, dating
 - Placement: IG feed + FB feed first. No Audience Network.
 - Status: paused — resume only after Stripe success redirect is https://jayjasmine.github.io/swipekill/success.html
+- Organic unlock (no redirect): paywall → success.html. Ads still need that after-completion redirect.
 
 ## Creative A (primary)
 Primary text: Your first photo is why she never sees the rest.

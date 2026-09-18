@@ -4,8 +4,10 @@
   var locked = document.getElementById("locked");
   var pay = document.getElementById("pay");
   var fail = document.getElementById("fail");
+  var afterPay = document.getElementById("after-pay");
 
   if (fail) fail.classList.remove("is-on");
+  if (afterPay) afterPay.classList.remove("is-on");
   if (SK.store.hasPaymentLink()) {
     if (pay) pay.textContent = "Pay $19 on Stripe — unlock the report";
     if (fail) fail.classList.remove("is-on");
@@ -38,7 +40,11 @@
   pay.addEventListener("click", function () {
     fail.classList.remove("is-on");
     if (SK.store.hasPaymentLink()) {
-      location.href = SK.store.paymentUrl();
+      var w = window.open(SK.store.paymentUrl(), "_blank", "noopener");
+      if (w) {
+        try { w.opener = null; } catch (e) {}
+      }
+      if (afterPay) afterPay.classList.add("is-on");
       return;
     }
     /* Do not unlock. Do not fake a charge. */
