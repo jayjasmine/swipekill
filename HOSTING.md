@@ -21,6 +21,7 @@ https://jayjasmine.github.io/swipekill/success.html
 ## Discoverability (organic)
 
 - `robots.txt` + `sitemap.xml` on Pages root.
+- IndexNow: public `c866be82ab247c58750647b90f4edfca.txt` at Pages root. After that file is live, `bash deploy/indexnow.sh` (200/202 OK).
 - Open Graph / Product JSON-LD on `index.html`, plus `assets/og-share.png` (1200×630) for `og:image` / `twitter:image`.
 - Ready share copy: `SHARE_COPY.md` (do not auto-post as Jay).
 - Meta ads remain paused until Stripe success redirect is confirmed.
