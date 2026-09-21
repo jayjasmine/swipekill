@@ -429,6 +429,86 @@ section.band {
 .tiny { font-size: 0.8rem; }
 .muted { color: var(--muted); }
 
+/* Free tips strip (home) + article pages */
+.tip-grid {
+  display: grid;
+  gap: 0.8rem;
+  margin-top: 1.2rem;
+}
+@media (min-width: 720px) {
+  .tip-grid { grid-template-columns: repeat(3, 1fr); }
+}
+.tip-card {
+  display: block;
+  background: var(--card);
+  border: 1px solid var(--line);
+  padding: 1.05rem 1.05rem 1.15rem;
+  text-decoration: none;
+  color: inherit;
+}
+.tip-card:hover { border-color: #44444c; }
+.tip-card strong {
+  display: block;
+  font-size: 1.05rem;
+  margin-bottom: 0.4rem;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+}
+.tip-card span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+.tip-card i {
+  display: block;
+  margin-top: 0.75rem;
+  color: var(--gold);
+  font-style: normal;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.crumbs {
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin: 0 0 1rem;
+}
+.crumbs a { color: var(--muted); text-decoration: none; }
+.crumbs a:hover { color: var(--ink); }
+
+.article p {
+  color: #d5cfc5;
+  margin: 0 0 1rem;
+}
+.article h2 { margin-top: 1.8rem; }
+
+.related {
+  display: grid;
+  gap: 0.55rem;
+  margin-top: 1rem;
+  padding: 0;
+  list-style: none;
+}
+.related a {
+  color: var(--gold);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+.related a:hover { text-decoration: underline; }
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 1.15rem;
+  margin: 0 0 1rem;
+}
+.footer-nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 600;
+}
+.footer-nav a:hover { color: var(--ink); }
+
 .price-unit, .price-amt small {
   display: inline-block;
   margin-left: 0.55rem;
