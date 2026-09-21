@@ -22,5 +22,8 @@ https://jayjasmine.github.io/swipekill/
 ## One-liner bio / link-in-bio
 Which of your 6 photos is killing your matches? $19 autopsy → https://jayjasmine.github.io/swipekill/
 
+## Tip URLs (organic later — do not auto-post)
+First-photo kill: https://jayjasmine.github.io/swipekill/tips/first-photo-kills-matches.html · Group vs solo: https://jayjasmine.github.io/swipekill/tips/group-vs-solo-lead.html · Bathroom / cave lighting: https://jayjasmine.github.io/swipekill/tips/bathroom-mirror-dark-lighting.html
+
 ## Meta ads (paused until Stripe success redirect is set)
 See ADS.md. Do not resume until after-completion redirect = https://jayjasmine.github.io/swipekill/success.html

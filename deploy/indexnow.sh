@@ -27,6 +27,9 @@ if [[ ${#URLS[@]} -eq 0 ]]; then
     "https://jayjasmine.github.io/swipekill/"
     "https://jayjasmine.github.io/swipekill/upload.html"
     "https://jayjasmine.github.io/swipekill/paywall.html"
+    "https://jayjasmine.github.io/swipekill/tips/first-photo-kills-matches.html"
+    "https://jayjasmine.github.io/swipekill/tips/group-vs-solo-lead.html"
+    "https://jayjasmine.github.io/swipekill/tips/bathroom-mirror-dark-lighting.html"
   )
 fi
 
