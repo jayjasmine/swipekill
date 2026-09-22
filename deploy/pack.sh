@@ -25,7 +25,7 @@ mkdir -p "$STAGE"
 
 # Core static site (no serve.py needed on VPS; keep it for local QA)
 cp -a "$ROOT/index.html" "$ROOT/upload.html" "$ROOT/paywall.html" \
-  "$ROOT/report.html" "$ROOT/success.html" "$ROOT/favicon.svg" \
+  "$ROOT/report.html" "$ROOT/success.html" "$ROOT/sample-report.html" "$ROOT/favicon.svg" \
   "$ROOT/serve.py" "$STAGE/"
 for seo in robots.txt sitemap.xml; do
   [[ -f "$ROOT/$seo" ]] && cp -a "$ROOT/$seo" "$STAGE/"
