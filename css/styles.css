@@ -519,3 +519,67 @@ section.band {
   color: var(--muted);
   white-space: nowrap;
 }
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  align-items: center;
+}
+
+.sample-jump {
+  margin: 1rem 0 0;
+  color: #d5cfc5;
+}
+.sample-jump a {
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+}
+
+.sample-note {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--gold);
+  padding: 0.9rem 1rem;
+  margin: 0 0 1.3rem;
+  color: #d5cfc5;
+  font-size: 0.95rem;
+}
+.sample-note strong { color: var(--ink); }
+.sample-note p { margin: 0; }
+.sample-note p + p { margin-top: 0.55rem; }
+
+.sample-banner {
+  display: grid;
+  gap: 0.9rem;
+  align-items: start;
+}
+.sample-banner img {
+  width: min(100%, 13.5rem);
+  height: auto;
+  display: block;
+  background: #0e0e10;
+  border: 1px solid var(--line);
+}
+.sample-banner h3 {
+  font-size: clamp(1.25rem, 4vw, 1.55rem);
+  margin: 0.15rem 0 0.45rem;
+}
+.sample-banner p { margin: 0; }
+
+.sample-report .rank-card img {
+  object-fit: contain;
+  background: #0e0e10;
+}
+
+@media (max-width: 380px) {
+  .cta-row .btn { width: 100%; }
+}
