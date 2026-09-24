@@ -30,6 +30,9 @@ if [[ ${#URLS[@]} -eq 0 ]]; then
     "https://jayjasmine.github.io/swipekill/tips/first-photo-kills-matches.html"
     "https://jayjasmine.github.io/swipekill/tips/group-vs-solo-lead.html"
     "https://jayjasmine.github.io/swipekill/tips/bathroom-mirror-dark-lighting.html"
+    "https://jayjasmine.github.io/swipekill/tips/sunglasses-and-hats-hide-the-face.html"
+    "https://jayjasmine.github.io/swipekill/tips/gym-selfie-fish-eye.html"
+    "https://jayjasmine.github.io/swipekill/tips/looking-away-at-the-vista.html"
   )
 fi
 
